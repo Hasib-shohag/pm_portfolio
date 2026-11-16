@@ -9,6 +9,7 @@ import SystemArchitecture from './components/SystemArchitecture';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { AiSection, DeliverySection, ImpactSection } from './components/ExtraSections';
 
 function App() {
   return (
@@ -16,9 +17,12 @@ function App() {
       <Navigation />
       <Hero />
       <About />
+      <ImpactSection />
       <Experience />
       <Projects />
       <Skills />
+      <DeliverySection />
+      <AiSection />
       <ProductThinking />
       <SystemArchitecture />
       <Blog />
