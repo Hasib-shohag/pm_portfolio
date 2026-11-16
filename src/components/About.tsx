@@ -43,9 +43,6 @@ export default function About() {
   return (
     <section id="about" className="py-24 px-6 bg-[#0D1117]">
       <div className="max-w-6xl mx-auto">
-        <p className="font-mono text-sm text-[#00FFC6] mb-3 tracking-wider">
-          01 · ABOUT
-        </p>
         <h2 className="text-4xl md:text-5xl font-bold text-[#C9D1D9] mb-4">
           About
         </h2>
