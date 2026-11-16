@@ -3,42 +3,48 @@ import { Briefcase, Calendar } from 'lucide-react';
 export default function Experience() {
   const experiences = [
     {
-      company: 'Brain Station 23 PLC',
+      company: 'Celloscope',
+      location: 'Dhaka, Bangladesh',
+      role: 'Product Manager',
+      period: 'Nov 2026 – Present',
+      responsibilities: [
+        'Own product direction for a health ecosystem platform covering e-prescription, telemedicine, appointments and patient health records; drafted the product vision and defined the telemedicine and appointment roadmaps with the delivery teams.',
+        'Designed the delivery operating model for three teams and authored a Development Process & Delivery Framework: Definition of Ready, 1–3 point estimation, separate QA, UAT, Ready for Live and Production Deployed gates, and RACI.',
+        'Built an MCP server for the team’s self-hosted project management tool and used AI to migrate about 2,350 work items across four team workspaces with no deletions.',
+      ],
+    },
+    {
+      company: 'Brain Station 23',
       location: 'Dhaka, Bangladesh',
       role: 'Project Manager',
-      period: '2024 – Present',
+      period: 'Apr 2024 – Oct 2026',
       responsibilities: [
-        'Led end-to-end delivery of digital banking, AI ATS Platform, AI Ride Planner and Micro credit platforms',
-        'Converted strategic goals into PRDs, SRS documents, and user stories',
-        'Managed product roadmap execution with engineering, design, QA, and operations teams',
-        'Managed stakeholders at all levels, including CXOs internally and external partners across multiple verticals',
-        'Supported system architecture workflows and API integrations',
-        'Conducted post-release evaluations to improve system scalability',
+        'Delivered fintech, remittance, AI and bank-audit platforms, including 3 banking solutions for 325,000+ active users; wrote requirements and shaped the roadmap with the client and solution architects.',
+        'Reduced rework by 25% through SRS documents, API specifications and clear acceptance criteria.',
+        'Led 110+ cross-functional team members through Scrum with an 85% sprint delivery success rate.',
+        'Cut go-to-market time by 30% by scoping credit-based fintech MVPs and deferring automated settlement integration.',
+        'Improved project margins by 15% with earned value (CPI) tracking and raised client satisfaction by 20%.',
+        'Introduced AI-assisted project control: requirement review, scope traceability and board-to-baseline reconciliation.',
       ],
     },
     {
       company: 'TS4U LLC',
-      location: 'Michigan, USA',
+      location: 'Michigan, USA (Remote)',
       role: 'Product Manager',
-      period: '2023 – 2024',
+      period: 'Jan 2023 – Apr 2024',
       responsibilities: [
-        'Owned full product lifecycle for SaaS platforms',
-        'Defined product vision and roadmap',
-        'Conducted user research and market validation',
-        'Collaborated with engineering and design teams to improve usability',
-        'Led agile ceremonies and sprint planning',
-        'Delivered features improving user engagement and retention',
+        'Owned the lifecycle of a SaaS project management platform and an EdTech app, improving user engagement by 15–20% and reducing rework by 10–15%.',
+        'Introduced Show & Tell demos to drive course completion and launched real-time chat based on competitor gap analysis and churn data, contributing to a 10% rise in active interactions.',
+        'Ran email and SMS A/B campaigns against the North Star Metric; 90–95% sprint adherence, +15% customer satisfaction, 20% faster go-to-market.',
       ],
     },
     {
       company: 'Dekko Legacy Group',
       location: 'Dhaka, Bangladesh',
-      role: 'Executive – Sales & Marketing',
-      period: '2022',
+      role: 'Executive, Sales & Marketing',
+      period: 'Aug – Dec 2022',
       responsibilities: [
-        'Supported pipeline and sales operations',
-        'Generated market insights to improve revenue opportunities',
-        'Coordinated with production and planning teams to improve workflow efficiency',
+        'Coordinated B2B sales pipeline, order scheduling and cross-team fulfillment planning.',
       ],
     },
   ];
@@ -46,10 +52,17 @@ export default function Experience() {
   return (
     <section id="experience" className="py-24 px-6 bg-[#0D1117]">
       <div className="max-w-6xl mx-auto">
+        <p className="font-mono text-sm text-[#00FFC6] mb-3 tracking-wider">
+          02 · EXPERIENCE
+        </p>
         <h2 className="text-4xl md:text-5xl font-bold text-[#C9D1D9] mb-4">
-          Work <span className="text-[#00FFC6]">Experience</span>
+          Experience
         </h2>
-        <div className="w-20 h-1 bg-[#00FFC6] mb-16" />
+        <div className="w-20 h-1 bg-[#00FFC6] mb-4" />
+        <p className="text-[#8B949E] mb-16">
+          Roles across product and project management in fintech, healthtech and
+          SaaS delivery.
+        </p>
 
         <div className="relative">
           <div className="absolute left-0 md:left-8 top-0 bottom-0 w-0.5 bg-[#30363d]" />

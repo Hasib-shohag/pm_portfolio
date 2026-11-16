@@ -79,8 +79,8 @@ export default function Hero() {
         </div>
 
         <p className="text-lg md:text-xl text-[#8B949E] max-w-3xl mx-auto mb-12 leading-relaxed">
-          Building scalable fintech and SaaS products by aligning business strategy, user needs, and
-          engineering systems.
+          Building scalable fintech, healthtech and SaaS products by aligning business strategy,
+          user needs, and engineering systems.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">

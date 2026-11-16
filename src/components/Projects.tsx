@@ -11,16 +11,17 @@ export default function Projects() {
       role: 'Project Manager',
       users: '220K+',
       problem:
-        'Bank needed a reliable internet banking for retail and corporate and loan platform with scalable microservice transition from monolith architecture.',
+        'A bank needed reliable internet banking for retail and corporate customers, plus a loan platform, with a scalable transition from a monolith to a microservice architecture.',
       solution:
-        'Delivered two digital banking platforms with integrated loan modules and scalable backend architecture.',
+        'Delivered two digital banking platforms with integrated loan modules and a scalable backend architecture.',
       contributions: [
-        'Project planning execution',
-        'SRS Writing and API integration feasibility',
-        'Internal and External team management and CPI verification',
-        'Pre and Post-release Checklist and release coordination',
+        'Project planning and execution',
+        'SRS writing and API integration feasibility',
+        'Internal and external team management and CPI verification',
+        'Pre- and post-release checklists and release coordination',
       ],
-      impact: 'Reduced system rework by 20% through better requirement analysis and sprint planning.',
+      impact:
+        'Reduced system rework by 20% through better requirement analysis and sprint planning.',
       tags: ['Fintech', 'Digital Banking', 'Retail', 'Corporate'],
     },
     {
@@ -29,16 +30,17 @@ export default function Projects() {
       role: 'Product Manager',
       users: null,
       problem:
-        'Ride-share drivers struggle to find rides and access financing due to lack of credit scoring.',
+        'Ride-share drivers struggle to find rides and access financing due to a lack of credit scoring.',
       solution:
-        'Platform enabling AI-based location wise ride planning with credit scoring and loan accessibility for ride-share drivers.',
+        'A platform enabling AI-based, location-aware ride planning with credit scoring and loan accessibility for ride-share drivers.',
       contributions: [
         'Managed product roadmap',
         'Technical workflow design',
         'AI credit scoring integration',
         'Financial analytics implementation',
       ],
-      impact: 'AI Based personalized trips planning and Improved financing accessibility for underserved ride-share driver segment.',
+      impact:
+        'AI-based personalized trip planning and improved financing accessibility for an underserved ride-share driver segment.',
       tags: ['AI', 'Ride Share', 'Fintech', 'Credit Scoring'],
     },
     {
@@ -46,16 +48,17 @@ export default function Projects() {
       year: '2024-2025',
       role: 'Product Manager',
       users: '100k+',
-      problem: 'Unengaged in banking domain RMG workers needed flexible credit options.',
+      problem:
+        'Unbanked workers in the manufacturing sector needed flexible credit options.',
       solution:
         'Designed a credit-enabled marketplace combining loans, savings, investments, and product EMIs.',
       contributions: [
-        'Product strategy and User journey establishment',
+        'Product strategy and user journey design',
         'Technical workflow design',
         'Credit integration roadmap',
         'Multi-product feature planning',
       ],
-      impact: 'Enabled seamless credit access within e-commerce ecosystem.',
+      impact: 'Enabled seamless credit access within an e-commerce ecosystem.',
       tags: ['E-commerce', 'Credit', 'Microfinance', 'e-KYC', 'Loan'],
     },
     {
@@ -63,9 +66,10 @@ export default function Projects() {
       year: '2024',
       role: 'Product Manager',
       users: '50k',
-      problem: 'Development teams needed better workflow tracking, testing, communication through chats and automation.',
+      problem:
+        'Development teams needed better workflow tracking, testing, communication through chat, and automation.',
       solution:
-        'Internal platform supporting automated testing, configurable roles, and user story execution with ticketing based chat feature.',
+        'A SaaS platform supporting automated testing, configurable roles, and user story execution with a ticketing-based chat feature.',
       contributions: [
         'Automated testing workflows',
         'Role-based access control',
@@ -80,10 +84,17 @@ export default function Projects() {
   return (
     <section id="projects" className="py-24 px-6 bg-[#0D1117]">
       <div className="max-w-6xl mx-auto">
+        <p className="font-mono text-sm text-[#00FFC6] mb-3 tracking-wider">
+          03 · PROJECTS
+        </p>
         <h2 className="text-4xl md:text-5xl font-bold text-[#C9D1D9] mb-4">
-          Key <span className="text-[#00FFC6]">Projects</span>
+          Projects
         </h2>
-        <div className="w-20 h-1 bg-[#00FFC6] mb-16" />
+        <div className="w-20 h-1 bg-[#00FFC6] mb-4" />
+        <p className="text-[#8B949E] mb-16">
+          A selection of fintech, SaaS and AI products I delivered from
+          discovery to release.
+        </p>
 
         <div className="space-y-6">
           {projects.map((project, index) => {

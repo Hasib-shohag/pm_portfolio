@@ -34,25 +34,54 @@ export default function About() {
     },
   ];
 
+  const proofStrip = [
+    { value: '4+', label: 'years of experience' },
+    { value: '325,000+', label: 'active users served' },
+    { value: '110+', label: 'team members led' },
+  ];
+
   return (
     <section id="about" className="py-24 px-6 bg-[#0D1117]">
       <div className="max-w-6xl mx-auto">
+        <p className="font-mono text-sm text-[#00FFC6] mb-3 tracking-wider">
+          01 · ABOUT
+        </p>
         <h2 className="text-4xl md:text-5xl font-bold text-[#C9D1D9] mb-4">
-          About <span className="text-[#00FFC6]">Me</span>
+          About
         </h2>
-        <div className="w-20 h-1 bg-[#00FFC6] mb-12" />
+        <div className="w-20 h-1 bg-[#00FFC6] mb-4" />
+        <p className="text-[#8B949E] mb-16">
+          A product and project manager who takes fintech, healthtech and SaaS
+          products from discovery to release.
+        </p>
 
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           <div className="space-y-6">
-            <p className="text-[#8B949E] text-lg leading-relaxed"> I'm
-              <span className="text-[#C9D1D9] font-semibold"> Md Hasibul Hossain</span>, a Product and Project Manager experienced in delivering scalable digital platforms. I lead cross-functional teams to turn complex business problems into structured, user-focused products, combining roadmap planning, agile execution, and KPI-driven decision making.
-            </p>
             <p className="text-[#8B949E] text-lg leading-relaxed">
-              My work spans SaaS and platform systems, with technical expertise in AI-driven products, large language models, agentic AI workflows, tokenization, embeddings, and API-driven architectures.
+              I'm <span className="text-[#C9D1D9] font-semibold">Md Hasibul Hossain</span>,
+              a Product and Project Manager with over 4 years of experience taking
+              healthcare, fintech, banking, remittance and SaaS products from
+              discovery to release. I write the requirements and shape the roadmap,
+              then build the delivery system around them: operating frameworks,
+              readiness rules, release gates and cadences. I also build with AI: I
+              keep a structured context system for my work and built tooling that
+              connects AI assistants to my team's project management tool, and I
+              verify every AI output against source.
             </p>
-            <p className="text-[#8B949E] text-lg leading-relaxed">
-              I thrive at the intersection of strategy, execution, and emerging technologies, building impactful products that scale reliably.
-            </p>
+
+            <div className="flex flex-wrap gap-4">
+              {proofStrip.map((item) => (
+                <div
+                  key={item.label}
+                  className="bg-[#161B22] border border-[#30363d] rounded-xl px-5 py-4 hover:border-[#00FFC6]/50 transition-all duration-300"
+                >
+                  <p className="text-2xl font-bold text-[#00FFC6] font-mono">
+                    {item.value}
+                  </p>
+                  <p className="text-[#8B949E] text-sm mt-1">{item.label}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="relative">

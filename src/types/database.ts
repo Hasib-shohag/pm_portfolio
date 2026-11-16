@@ -13,6 +13,9 @@ export interface Database {
           created_at: string;
           updated_at: string;
           tags: string[];
+          category: string | null;
+          source_url: string | null;
+          show_date: boolean;
         };
         Insert: {
           id?: string;
@@ -25,6 +28,9 @@ export interface Database {
           created_at?: string;
           updated_at?: string;
           tags?: string[];
+          category?: string | null;
+          source_url?: string | null;
+          show_date?: boolean;
         };
         Update: {
           id?: string;
@@ -37,6 +43,9 @@ export interface Database {
           created_at?: string;
           updated_at?: string;
           tags?: string[];
+          category?: string | null;
+          source_url?: string | null;
+          show_date?: boolean;
         };
       };
       contact_submissions: {
