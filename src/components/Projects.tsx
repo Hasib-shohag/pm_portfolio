@@ -1,69 +1,202 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp, Users, TrendingUp } from 'lucide-react';
 
+interface Project {
+  title: string;
+  year: string;
+  role: string;
+  users: string | null;
+  problem: string;
+  solution: string;
+  contributions: string[];
+  impact: string;
+  tags: string[];
+}
+
 export default function Projects() {
   const [expandedProject, setExpandedProject] = useState<number | null>(null);
 
-  const projects = [
+  const projects: Project[] = [
+    {
+      title: 'Health Ecosystem Platform',
+      year: '2026',
+      role: 'Product Manager',
+      users: null,
+      problem:
+        'Patients have no portable health record, and doctors need a practical first step onto a connected platform. e-Prescription is the wedge that brings doctors in first.',
+      solution:
+        'A connected platform spanning e-prescription, telemedicine, appointments and patient health records, delivered by three coordinated teams on a shared operating model.',
+      contributions: [],
+      impact:
+        'Telemedicine and appointment roadmaps defined with the delivery teams, and a delivery framework authored for three teams.',
+      tags: ['Healthtech', 'e-Prescription', 'Telemedicine', 'Patient Records'],
+    },
     {
       title: 'Digital Banking Platform',
-      year: '2024-2025',
+      year: '2024–2026',
       role: 'Project Manager',
       users: '325,000+',
       problem:
-        'A bank needed reliable internet banking for retail and corporate customers, plus a loan platform, with a scalable transition from a monolith to a microservice architecture.',
+        'A private bank in Bangladesh needed to replace its legacy retail and corporate internet banking app, web and admin panel.',
       solution:
-        'Delivered two digital banking platforms with integrated loan modules and a scalable backend architecture.',
+        'New retail and corporate banking channels (app, web and admin panel) with loan management, delivered phase by phase with UAT sign-off at each stage.',
       contributions: [
-        'Project planning and execution',
-        'SRS writing and API integration feasibility',
-        'Internal and external team management and CPI verification',
-        'Pre- and post-release checklists and release coordination',
+        'Joined in Oct 2024 as the client-facing lead PM, about a month before the first go-live',
+        'Release coordination, UAT sign-off and change requests (23 live)',
+        'Corporate production readiness and deployment coordination',
+        'UAT scope and release criteria reduced post-release rework by 20%',
       ],
       impact:
-        'Reduced post-release rework by 20% through UAT scope and release criteria.',
+        'The retail channel replaced the legacy app and is live, with 373 of 443 RFP items live and UAT-signed off (Sep 2026). Corporate had 118 items UAT-signed off and was ready for go-live pending hardware.',
       tags: ['Fintech', 'Digital Banking', 'Retail', 'Corporate'],
     },
     {
-      title: 'AI Ride-Share Microfinance Platform',
-      year: '2025',
-      role: 'Product Manager',
+      title: 'Credit-Based E-Commerce & Microfinance Platform',
+      year: '2024–2025',
+      role: 'Project Manager',
       users: null,
       problem:
-        'Ride-share drivers struggle to find rides and access financing due to a lack of credit scoring.',
+        'Factory-employee customers of a retail operator needed flexible credit and savings inside the existing shopping app.',
       solution:
-        'A platform enabling AI-based, location-aware ride planning with credit scoring and loan accessibility for ride-share drivers.',
+        'Loans, instalment purchases and savings and investment added to the client\u2019s existing app and admin portal, on an Apache Fineract loan core with credit scoring.',
       contributions: [
-        'Managed product roadmap',
-        'Technical workflow design',
-        'AI credit scoring integration',
-        'Financial analytics implementation',
+        'Only PM from Apr 2024, leading a team of 5',
+        'Wrote the proposal for a follow-on nano loan and savings platform and managed its delivery through go-live',
+        'Dependency tracking, change requests, UAT and release documents',
+        'Fallback clauses that turned open client dependencies into decisions',
       ],
       impact:
-        'AI-based personalized trip planning and improved financing accessibility for an underserved ride-share driver segment.',
-      tags: ['AI', 'Ride Share', 'Fintech', 'Credit Scoring'],
+        'Loan features went live in Sep 2024, the instalment (BNPL) module passed client UAT and reached production in Aug 2025, and the savings and investment feature went live.',
+      tags: ['E-commerce', 'Credit', 'Microfinance', 'Savings', 'Fineract'],
     },
     {
-      title: 'Credit-Based E-Commerce & Microfinance Platform',
-      year: '2024-2025',
-      role: 'Product Manager',
+      title: 'Cross-Border Remittance & Multi-Currency Wallets',
+      year: '2026',
+      role: 'Project Manager',
       users: null,
       problem:
-        'Unbanked workers in the manufacturing sector needed flexible credit options.',
+        'Freelancers and families living abroad needed wallets and remittance that work across borders, not just in one country.',
       solution:
-        'Designed a credit-enabled marketplace combining loans, savings, investments, and product EMIs.',
+        'P2P and multi-currency wallet products with KYC/AML, pay-in and payout integrations, an agent panel, and remittance to 100+ countries via bank transfer, cash pickup and mobile wallet.',
       contributions: [
-        'Product strategy and user journey design',
-        'Technical workflow design',
-        'Credit integration roadmap',
-        'Multi-product feature planning',
+        'Release planning and post-launch hypercare',
+        'KYC/AML, pay-in and payout integration delivery',
+        'Cross-functional coordination across QA, DevOps, backend and frontend',
       ],
-      impact: 'Enabled seamless credit access within an e-commerce ecosystem.',
-      tags: ['E-commerce', 'Credit', 'Microfinance', 'e-KYC', 'Loan'],
+      impact:
+        'Onboarding across multiple countries and base currencies, built for users who live between two countries.',
+      tags: ['Remittance', 'Multi-Currency Wallets', 'KYC', 'AML', 'Fintech'],
+    },
+    {
+      title: 'Cross-Border Payout Hub',
+      year: '2026',
+      role: 'Project Manager',
+      users: null,
+      problem:
+        'Fintechs and remittance companies need to pay out across borders to bank accounts, mobile wallets and cash pickup through one integration.',
+      solution:
+        'A prefund-only, ledger-first payout platform delivered as a technology layer under licensed partners, with connector-based rails and AI limited to advisory roles.',
+      contributions: [
+        'Project manager for the initiative',
+        'Reviewing the requirements, scope baseline and money-movement reference module by module',
+        'Tracking the open provider decisions that gate the first go-live',
+      ],
+      impact:
+        'Scope baseline frozen, project approved with a team and plan, and now in design and build.',
+      tags: ['Payments', 'Payouts', 'Stablecoin', 'Ledger'],
+    },
+    {
+      title: 'Bank Internal Audit & Compliance Platform',
+      year: '2026',
+      role: 'Project Manager',
+      users: null,
+      problem:
+        'A private bank needed an end-to-end internal audit lifecycle aligned to Bangladesh Bank requirements.',
+      solution:
+        'Audit planning, holiday-aware team assignment, pre- and post-audit workflows, branch-wise risk scoring, real-time progress tracking and AI-integrated reporting.',
+      contributions: [
+        'Delivery management and audit workflow design',
+        'Branch-wise risk scoring and real-time tracking',
+        'AI-integrated reporting',
+      ],
+      impact:
+        'Supports a yearly risk-based plan of 120+ audits across 100+ branches and substantially cuts manual audit-tracking effort.',
+      tags: ['Banking', 'Audit', 'Compliance', 'AI'],
+    },
+    {
+      title: 'AI Recruitment Automation',
+      year: '2025',
+      role: 'Project Manager',
+      users: null,
+      problem:
+        'Hiring teams had to download resumes by hand and screen candidates one by one.',
+      solution:
+        'Automatically syncs job postings and applicants from a major job board and scores candidates against job descriptions with AI.',
+      contributions: [
+        'Requirements and automation logic',
+        'Applicant sync and AI candidate scoring',
+        'Delivery management',
+      ],
+      impact: '30% faster hiring decisions and 40–50% less HR workload.',
+      tags: ['AI', 'Recruitment', 'Automation'],
+    },
+    {
+      title: 'Ride-Share Driver Analytics & Finance Platform',
+      year: '2025',
+      role: 'Project Manager',
+      users: null,
+      problem:
+        'Ride-share drivers lacked a clear view of trips, earnings and time across platforms, and had no data-driven path to credit.',
+      solution:
+        'A driver app and back office with performance analytics, AI-based suggestions and a recommendation engine, with loans, eKYC and subscriptions specified for phase 2.',
+      contributions: [
+        'Only PM from Mar 2025, leading a team of 7',
+        'Client discussions, sprint planning and weekly reporting',
+        'Phase 2 SRS set (loans, eKYC, subscriptions) with acceptance criteria',
+        'Treated data acquisition as its own feasibility workstream',
+      ],
+      impact:
+        'Phase 1 delivered the driver dashboard, performance analytics, login and sign-up, with the recommendation-engine foundation; the phase 2 loan, eKYC and subscription modules were fully specified with acceptance criteria.',
+      tags: ['AI', 'Ride Share', 'Analytics', 'Fintech'],
+    },
+    {
+      title: 'AML/CFT Transaction Monitoring Product Definition',
+      year: '2024',
+      role: 'Product Definition',
+      users: null,
+      problem:
+        'Financial institutions need to screen and monitor customer transactions for AML/CFT risk, and manage the alerts and cases that result.',
+      solution:
+        'A feature catalogue for a platform covering alerts, case management with maker-checker approvals, sanction and PEP screening, rule-based monitoring, customer risk grading and STR/SAR reports.',
+      contributions: [
+        'AML/CFT feature catalogue',
+        'Granular permissions list',
+        'Customer risk-grading matrix',
+      ],
+      impact:
+        'I wrote the AML/CFT feature catalogue, the permissions list and the customer risk-grading matrix for a transaction monitoring product.',
+      tags: ['AML', 'CFT', 'Compliance', 'Banking', 'Product Definition'],
+    },
+    {
+      title: 'Saastho — Doctor Appointment Platform',
+      year: '2026',
+      role: 'Founder',
+      users: null,
+      problem:
+        'Getting a doctor\u2019s serial meant contacting the clinic within a narrow window, with no certainty about when the doctor would see you.',
+      solution:
+        'An end-to-end doctor appointment platform covering booking, patient journey management and pharma marketing automation.',
+      contributions: [
+        'Product vision and definition',
+        'Appointment booking and patient journey',
+        'Pharma marketing automation',
+      ],
+      impact: 'Founded and led product definition and build with a team.',
+      tags: ['Healthtech', 'Appointments', 'Startup'],
     },
     {
       title: 'Project Management SaaS Platform',
-      year: '2024',
+      year: '2023–2024',
       role: 'Product Manager',
       users: null,
       problem:
@@ -140,19 +273,21 @@ export default function Projects() {
                       <p className="text-[#8B949E] pl-6">{project.solution}</p>
                     </div>
 
-                    <div>
-                      <h4 className="text-[#C9D1D9] font-semibold mb-3 flex items-center gap-2">
-                        <span className="text-[#00FFC6]">◆</span> Key Contributions
-                      </h4>
-                      <ul className="grid md:grid-cols-2 gap-2 pl-6">
-                        {project.contributions.map((contribution, idx) => (
-                          <li key={idx} className="flex items-start text-[#8B949E]">
-                            <span className="text-[#00FFC6] mr-2">▹</span>
-                            <span>{contribution}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    {project.contributions.length > 0 && (
+                      <div>
+                        <h4 className="text-[#C9D1D9] font-semibold mb-3 flex items-center gap-2">
+                          <span className="text-[#00FFC6]">◆</span> Key Contributions
+                        </h4>
+                        <ul className="grid md:grid-cols-2 gap-2 pl-6">
+                          {project.contributions.map((contribution, idx) => (
+                            <li key={idx} className="flex items-start text-[#8B949E]">
+                              <span className="text-[#00FFC6] mr-2">▹</span>
+                              <span>{contribution}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
 
                     <div className="bg-[#00FFC6]/5 border border-[#00FFC6]/30 rounded-lg p-4">
                       <h4 className="text-[#C9D1D9] font-semibold mb-2 flex items-center gap-2">

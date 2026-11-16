@@ -78,10 +78,26 @@ export default function Hero() {
           </p>
         </div>
 
-        <p className="text-lg md:text-xl text-[#8B949E] max-w-3xl mx-auto mb-12 leading-relaxed">
+        <p className="text-lg md:text-xl text-[#8B949E] max-w-3xl mx-auto mb-10 leading-relaxed">
           Building scalable fintech, healthtech and SaaS products by aligning business strategy,
           user needs, and engineering systems.
         </p>
+
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
+          {[
+            { value: '4+ years', label: 'professional experience' },
+            { value: '325,000+', label: 'active users on banking products' },
+            { value: '110+', label: 'team members led' },
+          ].map((item) => (
+            <div
+              key={item.label}
+              className="bg-[#161B22]/80 border border-[#00FFC6]/20 rounded-xl px-5 py-3 backdrop-blur-sm"
+            >
+              <p className="text-[#00FFC6] font-bold text-lg font-mono">{item.value}</p>
+              <p className="text-[#8B949E] text-xs mt-0.5">{item.label}</p>
+            </div>
+          ))}
+        </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
           <a
