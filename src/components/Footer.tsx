@@ -32,7 +32,7 @@ export default function Footer() {
               <Linkedin size={18} />
             </a>
             <a
-              href="https://github.com/Hasib-shohag/Resume/raw/8b72e2f0fe38caff46085d7c3a60420e602706c5/CV_Md_Hasibul_Hossain_PM.pdf"
+              href="https://github.com/Hasib-shohag/Resume/raw/main/CV_Md_Hasibul_Hossain.pdf"
               download
               className="w-10 h-10 bg-[#21262d] border border-[#30363d] rounded-lg flex items-center justify-center text-[#8B949E] hover:text-[#00FFC6] hover:border-[#00FFC6]/50 transition-all"
               aria-label="Resume"
