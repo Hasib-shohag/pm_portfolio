@@ -179,7 +179,7 @@ export default function Projects() {
     },
     {
       title: 'Saastho — Doctor Appointment Platform',
-      year: '2026',
+      year: '2019–2020',
       role: 'Founder',
       users: null,
       problem:
