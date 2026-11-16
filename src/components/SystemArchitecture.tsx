@@ -54,7 +54,7 @@ export default function SystemArchitecture() {
 
           <div className="mt-12 grid md:grid-cols-3 gap-6">
             <div className="bg-[#00FFC6]/5 border border-[#00FFC6]/30 rounded-lg p-4 text-center">
-              <p className="text-[#00FFC6] font-bold text-2xl mb-1">220K+</p>
+              <p className="text-[#00FFC6] font-bold text-2xl mb-1">325K+</p>
               <p className="text-[#8B949E] text-sm">Active Users</p>
             </div>
             <div className="bg-[#58A6FF]/5 border border-[#58A6FF]/30 rounded-lg p-4 text-center">
@@ -62,8 +62,8 @@ export default function SystemArchitecture() {
               <p className="text-[#8B949E] text-sm">Reduced Rework</p>
             </div>
             <div className="bg-[#00FFC6]/5 border border-[#00FFC6]/30 rounded-lg p-4 text-center">
-              <p className="text-[#00FFC6] font-bold text-2xl mb-1">99.9%</p>
-              <p className="text-[#8B949E] text-sm">System Uptime</p>
+              <p className="text-[#00FFC6] font-bold text-2xl mb-1">110+</p>
+              <p className="text-[#8B949E] text-sm">Team Members Led</p>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ export default function Projects() {
       title: 'Digital Banking Platform',
       year: '2024-2025',
       role: 'Project Manager',
-      users: '220K+',
+      users: '325,000+',
       problem:
         'A bank needed reliable internet banking for retail and corporate customers, plus a loan platform, with a scalable transition from a monolith to a microservice architecture.',
       solution:
@@ -21,7 +21,7 @@ export default function Projects() {
         'Pre- and post-release checklists and release coordination',
       ],
       impact:
-        'Reduced system rework by 20% through better requirement analysis and sprint planning.',
+        'Reduced post-release rework by 20% through UAT scope and release criteria.',
       tags: ['Fintech', 'Digital Banking', 'Retail', 'Corporate'],
     },
     {
@@ -47,7 +47,7 @@ export default function Projects() {
       title: 'Credit-Based E-Commerce & Microfinance Platform',
       year: '2024-2025',
       role: 'Product Manager',
-      users: '100k+',
+      users: null,
       problem:
         'Unbanked workers in the manufacturing sector needed flexible credit options.',
       solution:
@@ -65,7 +65,7 @@ export default function Projects() {
       title: 'Project Management SaaS Platform',
       year: '2024',
       role: 'Product Manager',
-      users: '50k',
+      users: null,
       problem:
         'Development teams needed better workflow tracking, testing, communication through chat, and automation.',
       solution:
