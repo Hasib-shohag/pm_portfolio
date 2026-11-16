@@ -34,7 +34,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center gap-2 text-xl font-bold text-[#00FFC6] hover:text-[#00FFC6]/80 transition-colors">
             <img src="/favicon.svg" alt="" width="32" height="32" className="rounded-lg" />
-            alt="MH" width="32"
+            <span className="sr-only">MH</span>
           </a>
 
           <div className="hidden md:flex items-center gap-8">
