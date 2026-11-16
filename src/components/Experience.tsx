@@ -12,7 +12,7 @@ interface ExperienceEntry {
 export default function Experience() {
   const experiences: ExperienceEntry[] = [
     {
-      company: 'Stealth Healthtech Startup',
+      company: 'Celloscope',
       location: 'Dhaka, Bangladesh',
       role: 'Product Manager',
       period: 'Nov 2026 – Present',
