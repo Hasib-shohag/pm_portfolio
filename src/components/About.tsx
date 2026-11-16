@@ -36,7 +36,7 @@ export default function About() {
 
   const proofStrip = [
     { value: '4+', label: 'years of experience' },
-    { value: '325,000+',  'active users served' },
+    { value: '325,000+', label: 'active users served' },
     { value: '110+', label: 'team members led' },
   ];
 
