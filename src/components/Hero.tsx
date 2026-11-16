@@ -107,7 +107,7 @@ export default function Hero() {
             View Projects
           </a>
           <a
-            href="https://github.com/Hasib-shohag/Resume/raw/8b72e2f0fe38caff46085d7c3a60420e602706c5/CV_Md_Hasibul_Hossain_PM.pdf"
+            href="https://github.com/Hasib-shohag/Resume/raw/main/CV_Md_Hasibul_Hossain.pdf"
             download
             className="px-8 py-3 bg-[#21262d] text-[#C9D1D9] rounded-lg font-semibold hover:bg-[#30363d] transition-all border border-[#30363d] flex items-center gap-2"
           >
